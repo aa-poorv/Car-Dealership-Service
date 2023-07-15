@@ -1,23 +1,23 @@
 1. SetUp
 
-step 1: run npm install to install dependencies
-step 2: then to seed the database first run node collectionSeed.js and then run node dataSeed.js.
-step 3: install thunderclient or postman for sending requests. and run nodemon index.js
+1) run npm install to install dependencies
+2) then to seed the database first run node collectionSeed.js and then run node dataSeed.js.
+3) install thunderclient or postman for sending requests. and run nodemon index.js
 
 2. API Reference
 
 $ Auth
 
-step 1: first to authenticate the user pass email and password from user or dealership whichever
-we want to login to operate on.(you can find password to enter in realPassword field) sending
-postrequest on endpoint http://localhost:3000/auth/login
-step 2: Now copy the access token for further authentication process to access user and dealership API's
-that is paste it in bearer token section.
-step 3: For logout of that account just send post request to http://localhost:3000/auth/logout
-step 4: As the assigned access token will expire after 10 minutes so to get fresh access token send request
-to http://localhost:3000/auth/refresh-token and get new access token.
-step 5: To change password send post request to http://localhost:3000/auth/changePassword and pass new password
-in body in json format.
+1. first to authenticate the user pass email and password from user or dealership whichever
+   we want to login to operate on.(you can find password to enter in realPassword field) sending
+   postrequest on endpoint http://localhost:3000/auth/login
+2. Now copy the access token for further authentication process to access user and dealership API's
+   that is paste it in bearer token section.
+3. For logout of that account just send post request to http://localhost:3000/auth/logout
+4. As the assigned access token will expire after 10 minutes so to get fresh access token send request
+   to http://localhost:3000/auth/refresh-token and get new access token.
+5. To change password send post request to http://localhost:3000/auth/changePassword and pass new password
+   in body in json format.
 
 $ User(first login in any user to access these)
 
